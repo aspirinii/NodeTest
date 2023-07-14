@@ -1,6 +1,7 @@
 const express =require('express');
 const bodyParser = require('body-parser');
-const {sequelize} = require('./database');
+const {sequelize} = require('./database'); // what is meaning of {}
+//In summary, the main difference is in how the sequelize object is imported and assigned. The first line uses destructuring assignment to extract the sequelize property, while the second line(without {}) assigns the entire object to the sequelize variable.
 
 async function launchServer() {
 	const app = express();

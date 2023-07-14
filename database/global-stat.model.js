@@ -1,6 +1,6 @@
 const {DataTypes} = require('sequelize')
 
-module.export = (sequelize) => {
+module.exports = (sequelize) => {
 	return sequelize.define(
 		'GlobalStat',// model name
 		{ //property list
