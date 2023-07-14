@@ -1,4 +1,4 @@
-const {DataTypes} = require('sequelize')
+const {DataTypes} = require('sequelize') //extract (specific Object) DataTypes from sequelize
 
 module.exports = (sequelize) => {
 	return sequelize.define(

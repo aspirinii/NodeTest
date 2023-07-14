@@ -16,4 +16,5 @@ const sequelize = new Sequelize(config.database, config.user, config.password,{
 module.exports = {
     sequelize,
     GlobalStat: require('./global-stat.model')(sequelize),
+     //In summary, require('')() is a two-step process. First, it imports a module using require(''), and then it immediately invokes the returned module as a function using ().
 };
